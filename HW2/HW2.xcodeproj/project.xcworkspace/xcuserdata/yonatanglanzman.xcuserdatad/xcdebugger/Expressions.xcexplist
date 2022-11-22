@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DataFile::operator=(DataFile const&amp;):DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::~DataFile():DataFile.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArr[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::DataFile():DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::addfile(DataFile&amp;, DataFile**&amp;, int&amp;, int&amp;):DataFile.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "Filesarr[1]">
+            </PersistentString>
+            <PersistentString
+               value = "NewArr[1]">
+            </PersistentString>
+            <PersistentString
+               value = "Filesarr[0]">
+            </PersistentString>
+            <PersistentString
+               value = "Filesarr[2]">
+            </PersistentString>
+            <PersistentString
+               value = "NewArr[2]">
+            </PersistentString>
+            <PersistentString
+               value = "NewArr[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::addfile(DataFile*, DataFile**&amp;, int&amp;, int&amp;):DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::setTime():DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::IsEmpty(int):DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArr[1]">
+            </PersistentString>
+            <PersistentString
+               value = "dataArr[2]">
+            </PersistentString>
+            <PersistentString
+               value = "dataArr[0]">
+            </PersistentString>
+            <PersistentString
+               value = "&amp;newfile">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "dyld3::MachOFile::isSimulatorPlatform(dyld3::Platform, dyld3::Platform*):(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArr[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::setFileName(char*):DataFile.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DataFile::setData(char*):DataFile.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
