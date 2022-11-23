@@ -6,11 +6,7 @@
 //
 
 #include "DataFile.hpp"
-#include <iostream>
-#include <ctime>
-#include <cstdlib>
 
-using namespace std;
 
 
 /* Methods Execution  */
@@ -75,8 +71,9 @@ float DataFile:: getSize() const{
 }
 
 void DataFile:: dir() const{
-    
-    cout << getTime() << " " << getSize() / 1024 << " KB " << getFileName()<< ".txt"<<endl;
+    char* time = getTime();
+    cout << time << " " << getSize() / 1024 << " KB " << getFileName()<< ".txt"<<endl;
+    delete [] time;
 }
 
 bool DataFile::IsEmpty(int arrsize){
@@ -124,7 +121,7 @@ DataFile:: DataFile() {
     char* data = NULL;
     setFileName(str);
     setData(data);
-//    DataFile file(str,data);
+
     
 }
 

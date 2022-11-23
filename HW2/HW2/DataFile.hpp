@@ -13,6 +13,8 @@
 #include <cstdlib>
 using namespace std;
 
+static int counter = 0;
+
 class DataFile{
     char* FileName;
     tm LastUpdateTime;
