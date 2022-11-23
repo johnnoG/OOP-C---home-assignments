@@ -55,14 +55,15 @@ char* DataFile:: getFileName() const{
 void DataFile:: setTime(){
     
     // current date/time based on current system
-    time_t now = time(0);
-    LastUpdateTime = localtime(&now);
+    time_t t1 = time(0);
+    struct tm* now =localtime(&t1);
+    LastUpdateTime = *now;
 }
 
 char* DataFile:: getTime() const{
     
     char buf[80];
-    strftime(buf, sizeof(buf), "%d/%m/%Y %X", LastUpdateTime);
+    strftime(buf, sizeof(buf), "%d/%m/%Y %X", &LastUpdateTime);
     char* stringTime = new char[strlen(buf) + 1];
     strcpy(stringTime, buf);
     return stringTime;
@@ -145,7 +146,6 @@ DataFile:: ~DataFile(){
 DataFile:: DataFile(const DataFile & NDataFile){
     FileName = NULL;
     Data = NULL;
-    LastUpdateTime = NULL;
     *this = NDataFile;
 }
 const DataFile& DataFile:: operator=(const DataFile& other){
@@ -155,7 +155,7 @@ const DataFile& DataFile:: operator=(const DataFile& other){
         delete [] FileName;
         setFileName(other.FileName);
         
-        delete [] LastUpdateTime;
+        
         LastUpdateTime = other.LastUpdateTime;
         
         delete [] Data;

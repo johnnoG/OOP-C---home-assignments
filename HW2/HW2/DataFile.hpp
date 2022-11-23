@@ -15,7 +15,7 @@ using namespace std;
 
 class DataFile{
     char* FileName;
-    tm* LastUpdateTime;
+    tm LastUpdateTime;
     char* Data;
     float getSize() const;
     
